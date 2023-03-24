@@ -1,0 +1,32 @@
+.nav {
+  color: var(--powder_blue);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--header-font);
+  padding: 1.5rem;
+}
+
+.logo {
+   width: 85px;
+}
+
+.nav_items {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav_link {
+   padding-bottom: .3rem;
+}
+
+.active {
+   border-bottom: 1px solid var(--white);
+}
+
+@media (min-width: 768px) {
+   .nav_items {
+      gap: 40px;
+   }
+}
