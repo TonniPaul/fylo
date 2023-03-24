@@ -1,4 +1,4 @@
-interface FeaturesData {
+interface FeatureData {
   id: string;
   image: string;
   title: string;
@@ -6,7 +6,7 @@ interface FeaturesData {
   altText: string;
 }
 
-export const featureData: FeaturesData[] = [
+export const featureData: FeatureData[] = [
   {
     id: crypto.randomUUID(),
     image: "/assets/icon-access-anywhere.svg",
