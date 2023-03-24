@@ -1,0 +1,11 @@
+.features_card_container {
+  margin: auto;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.feature_description,
+.feature_title,
+.feature_img {
+  padding: 0.5rem 0;
+}

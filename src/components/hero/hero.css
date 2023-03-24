@@ -1,0 +1,27 @@
+.hero_main_container {
+  width: 80%;
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+}
+
+.hero_img,
+.hero_header_text,
+.hero_description_text {
+  padding: .5rem;
+}
+
+.hero_img {
+  object-fit: contain;
+}
+
+.hero_header_text {
+  font-size: 1.3rem;
+}
+
+@media (max-width: 330px) {
+  .hero_header_text {
+    font-size: 1.1rem;
+  }
+
+}
