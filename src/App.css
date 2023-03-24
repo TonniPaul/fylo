@@ -6,3 +6,12 @@
   place-items: center;
   padding: 4rem 1rem;
 }
+
+
+@media (min-width : 900px) {
+   #features {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+   }
+}
