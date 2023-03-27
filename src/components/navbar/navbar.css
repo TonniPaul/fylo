@@ -43,4 +43,7 @@
    .nav_items {
       gap: 40px;
    }
+   .logo {
+      width: 150px;
+   }
 }

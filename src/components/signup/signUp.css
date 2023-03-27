@@ -1,0 +1,74 @@
+#signup {
+  position: relative;
+  padding-top: 150px;
+}
+
+.signUp_container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  background: var(--card_bg);
+  padding: 2rem;
+  border-radius: 10px;
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  top: 0px;
+  max-width: 860px;
+}
+
+.email {
+  padding: .875rem;
+  width: 100%;
+  outline: none;
+  border-radius: 30px;
+  border: none;
+  font-size: 1rem;
+}
+
+.email_btn {
+  width: 100%;
+  border: none;
+}
+.socials_icon {
+   width: 28px;
+   height: 28px;
+}
+
+.socials {
+   flex-direction: row;
+   justify-content: center;
+}
+
+
+
+/* ======MEDIA QUERIES ====== */
+@media (max-width : 330px) {
+   .email {
+      font-size: 13px;
+   }
+   
+}
+@media (min-width: 900px) {
+   .signUp_container {
+      top: 30px;
+   }
+  .signUp_form {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .email {
+    width: 60%;
+  }
+
+  .email_btn {
+    width: 30%;
+    margin: 0;
+  }
+}
