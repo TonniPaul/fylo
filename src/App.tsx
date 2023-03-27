@@ -1,15 +1,20 @@
 import "./App.css";
+import About from "./components/about/About";
 import Features from "./components/features/Features";
+import Footer from "./components/footer/Footer";
 import Hero from "./components/hero/Hero";
 import Navbar from "./components/navbar/Navbar";
+import SignUp from "./components/signup/SignUp";
+import TestimonyCard from "./components/testimony/TestimonyCard";
 import { featureData } from "./objectFiles/featureObject";
+import { testimonyData } from "./objectFiles/testimony";
 
 function App() {
   return (
     <div className="App">
       <Navbar />
       <Hero />
-      <div id="features">
+      <section id="features">
         {featureData.map((item) => (
           <Features
             key={item.id}
@@ -19,7 +24,22 @@ function App() {
             altText={item.altText}
           />
         ))}
-      </div>
+      </section>
+      <About />
+      <section id="testimony">
+        <img src="/assets/bg-quotes.png" alt="" className="quote_icon" />
+        {testimonyData.map((item) => (
+          <TestimonyCard
+            key={item.id}
+            profession={item.profession}
+            username={item.username}
+            profilePhoto={item.profilePhoto}
+            testimony={item.testimony}
+          />
+        ))}
+      </section>
+      <SignUp />
+      <Footer />
     </div>
   );
 }

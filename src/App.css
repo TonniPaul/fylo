@@ -7,11 +7,41 @@
   padding: 4rem 1rem;
 }
 
+#testimony {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 4rem 0;
+  position: relative;
+}
 
-@media (min-width : 900px) {
-   #features {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-   }
+.quote_icon {
+  width: 60px;
+  padding-left: 20px;
+}
+
+@media (min-width: 900px) {
+  #features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .quote_icon {
+    position: absolute;
+    left: -75px;
+    top: 50px;
+  }
+}
+
+@media (min-width: 1300px) {
+  #testimony {
+    flex-direction: row;
+    width: 80%;
+    justify-content: center;
+    grid-template-columns: 20px;
+    max-width: 1440px;
+    margin: auto;
+    padding: 6rem 0;
+  }
 }

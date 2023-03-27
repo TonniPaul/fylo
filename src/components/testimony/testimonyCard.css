@@ -1,0 +1,28 @@
+.testimony_container {
+   width: 85%;
+   max-width: 400px;
+   margin: auto;
+   background: var(--card_bg);
+   padding: 2rem 2.5rem;
+   border-radius: 10px;
+}
+
+.user_profile_container {
+   margin-top: 1rem;
+   display: flex ;
+   gap: 10px;
+   align-items: center;
+}
+.profile_img {
+   height: 50px;
+   width: 50px;
+   border-radius: 50%;
+}
+
+.username {
+   color: var(--white);
+}
+
+.user_profession {
+   color: var(--sky_blue);
+}

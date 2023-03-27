@@ -9,10 +9,12 @@
 }
 
 :root {
-   /* Color Variable  */
+  /* Color Variable  */
   --white: #ffffff;
   --primary_bg: #181f2a;
-  --secondary_bg: #1c2330; 
+  --secondary_bg: #1c2330;
+  --card_bg: #202a3c;
+  --footer_bg : #0B1523;
   --powder_blue: #c3c9cc;
   --sky_blue: #40b1d1;
   --sky_blue_light: #8cdae4;
@@ -37,9 +39,7 @@ a {
 
 h1,
 h2,
-h3,
-h4,
-h5 {
+h3 {
   color: var(--white);
   font-family: var(--header_font);
 }
@@ -49,7 +49,7 @@ h5 {
   border-radius: 30px;
   border: none;
   font-family: inherit;
-  font-size: 1rem;
+  font-size: 14px;
   background: var(--sky_blue);
   color: var(--white);
   width: 70%;
@@ -69,11 +69,4 @@ h5 {
     font-size: 0.8125rem;
     padding: 0.7rem;
   }
-}
-
-@media (min-width: 768px) {
-  /* body {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  } */
 }
