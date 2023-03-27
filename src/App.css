@@ -15,7 +15,9 @@
 #testimony > * {
   margin-bottom: 20px;
 }
-
+#testimony :nth-child(4) {
+  margin: 0;
+}
 .quote_icon {
   width: 60px;
   padding-left: 20px;
@@ -28,22 +30,20 @@
     gap: 20px;
   }
 
-  .quote_icon {
-    position: absolute;
-    left: -75px;
-    top: 50px;
-  }
-}
-
-@media (min-width: 1300px) {
   #testimony {
     display: flex;
-    gap: 20px;
-    width: 80%;
+    flex-wrap: wrap;
     justify-content: center;
-    grid-template-columns: 20px;
     max-width: 1440px;
     margin: auto;
     padding: 6rem 0;
+    width: 95%;
+  }
+
+  .quote_icon {
+    position: absolute;
+    left: 0;
+    top: 50px;
+    object-fit: contain;
   }
 }
