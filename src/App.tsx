@@ -6,8 +6,8 @@ import Hero from "./components/hero/Hero";
 import Navbar from "./components/navbar/Navbar";
 import SignUp from "./components/signup/SignUp";
 import TestimonyCard from "./components/testimony/TestimonyCard";
-import { featureData } from "./objectFiles/featureObject";
-import { testimonyData } from "./objectFiles/testimony";
+import { featureData } from "./data/featureObject";
+import { testimonyData } from "./data/testimony";
 
 function App() {
   return (
