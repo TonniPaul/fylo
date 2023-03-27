@@ -2,7 +2,7 @@ import "./footer.css";
 
 const Footer = () => {
   return (
-    <div id="footer">
+    <footer id="footer">
       <div className="footer_sub_container">
         <img src="/assets/logo.svg" alt="" className="logo footer_logo" />
         <div className="footer_links_container">
@@ -39,7 +39,7 @@ const Footer = () => {
               </a>
             </div>
           </div>
-          <div className="footer_columns">
+          <div className="footer_columns footer_columns_block">
             <a href="/" className="footer_links">
               About Us
             </a>
@@ -53,7 +53,7 @@ const Footer = () => {
               Blog
             </a>
           </div>
-          <div className="footer_columns">
+          <div className="footer_columns footer_columns_block">
             <a href="/" className="footer_links">
               Contact Us
             </a>
@@ -83,7 +83,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 
